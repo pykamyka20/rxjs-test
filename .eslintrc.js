@@ -4,7 +4,10 @@ module.exports = {
     node: true,
     browser: true,
   },
-  extends: ['airbnb-typescript/base', 'plugin:@typescript-eslint/recommended'],
+  extends: [
+    'airbnb-typescript/base',
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended'],
   overrides: [
     {
       files: ['*.ts'],
@@ -60,5 +63,5 @@ module.exports = {
     ecmaVersion: 2020,
     sourceType: 'module',
   },
-  plugins: ['simple-import-sort', 'import', 'unused-imports', '@angular-eslint'],
+  plugins: ['simple-import-sort', 'import', 'unused-imports', '@angular-eslint', '@typescript-eslint'],
 };

@@ -1,6 +1,7 @@
-import { TaskRoutingModule } from './task-routing.module';
-import { TaskComponent } from './components/task/task.component';
 import { NgModule } from '@angular/core';
+
+import { TaskComponent } from './components/task/task.component';
+import { TaskRoutingModule } from './task-routing.module';
 
 
 @NgModule({
