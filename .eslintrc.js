@@ -63,5 +63,5 @@ module.exports = {
     ecmaVersion: 2020,
     sourceType: 'module',
   },
-  plugins: ['simple-import-sort', 'import', 'unused-imports', '@angular-eslint', '@typescript-eslint'],
+  plugins: ['simple-import-sort', 'import', 'unused-imports', '@typescript-eslint', '@angular-eslint'],
 };
