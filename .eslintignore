@@ -1,0 +1,8 @@
+packages/**/*.js
+packages/**/*.d.ts
+*.spec.ts
+*.conf.ts
+*.html
+index.js
+main.js
+node_modules
