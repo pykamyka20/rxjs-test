@@ -1,0 +1,37 @@
+
+
+<h2>HTML Table</h2>
+<div>
+<form class="form" #ngSearchForm="ngForm" [formGroup]="searchForm">
+<div class="parent">
+	<div class="child">
+    <div class="form-group" >
+      <input type="text" [formControlName]="'search'" />
+    </div>
+	</div>
+	<div class="child">
+    <div class="form-group">
+      <input type="checkbox" [formControlName]="'checkBox'"/>
+    </div>
+	</div>
+</div>
+</form>
+</div>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Gender</th>
+    <th>Status</th>
+  </tr>
+  <ng-container *ngIf="clients$">
+    <tr *ngFor="let client of clients$ | async">
+      <td>{{client.id}}</td>
+      <td>{{client.name}}</td>
+      <td>{{client.email}}</td>
+      <td>{{client.gender}}</td>
+      <td>{{client.status}}</td>
+    </tr>
+  </ng-container>
+</table>
